@@ -8,6 +8,8 @@
 
 [0.1.0D](https://github.com/deprimus/SanityBreaker/releases/tag/0.1.0D) - September 12, 2020
 
+[1.0.0R](https://github.com/deprimus/SanityBreaker/releases/tag/1.0.0R) - October 17, 2020
+
 # License <a href="https://github.com/deprimus/SanityBreaker/blob/master/LICENSE"><img align="right" src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
 
 **Sanity Breaker** was developed by the [Deprimus](https://wiki.deprimus.men) members. The project code is licensed under the MIT license.
