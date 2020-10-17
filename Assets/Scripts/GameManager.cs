@@ -47,12 +47,20 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (started)
+        if(started)
         {
             if(!paused && (Input.GetKeyDown(KeyCode.R) || Input.GetMouseButtonDown(0)))
                 Reset();
-            else if(PAUSE_ALLOWED && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1)))
-                TogglePause();
+            else
+            {
+                if (PAUSE_ALLOWED && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1)))
+                    TogglePause();
+                if (Input.GetMouseButtonDown(1))
+                {
+                    player.isAI = !player.isAI;
+                    SoundManager.Play(SoundManager.Clip.SELECTION);
+                }
+            }
         }
         else
         {
